@@ -1,0 +1,58 @@
+# Project: Hranidbeni_lanac_projekt
+# Makefile created by Embarcadero Dev-C++ 6.3
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = Zivotinja.o main.o Grabezljivac.o Plijen.o Spol.o Proizvodac.o Datoteke.o Razlagac.o Datum_rodenja.o Prehrana.o Hranidbeni_lanac.o
+LINKOBJ  = Zivotinja.o main.o Grabezljivac.o Plijen.o Spol.o Proizvodac.o Datoteke.o Razlagac.o Datum_rodenja.o Prehrana.o Hranidbeni_lanac.o
+LIBS     = -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib" -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib" -static-libgcc -g3
+INCS     = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include"
+CXXINCS  = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++"
+BIN      = Hranidbeni_lanac_projekt.exe
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3
+DEL      = C:\Program Files (x86)\Embarcadero\Dev-Cpp\DevCpp.exe INTERNAL_DEL
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${DEL} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Zivotinja.o: Zivotinja.cpp
+	$(CPP) -c Zivotinja.cpp -o Zivotinja.o $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+Grabezljivac.o: Grabezljivac.cpp
+	$(CPP) -c Grabezljivac.cpp -o Grabezljivac.o $(CXXFLAGS)
+
+Plijen.o: Plijen.cpp
+	$(CPP) -c Plijen.cpp -o Plijen.o $(CXXFLAGS)
+
+Spol.o: Spol.cpp
+	$(CPP) -c Spol.cpp -o Spol.o $(CXXFLAGS)
+
+Proizvodac.o: Proizvodac.cpp
+	$(CPP) -c Proizvodac.cpp -o Proizvodac.o $(CXXFLAGS)
+
+Datoteke.o: Datoteke.cpp
+	$(CPP) -c Datoteke.cpp -o Datoteke.o $(CXXFLAGS)
+
+Razlagac.o: Razlagac.cpp
+	$(CPP) -c Razlagac.cpp -o Razlagac.o $(CXXFLAGS)
+
+Datum_rodenja.o: Datum_rodenja.cpp
+	$(CPP) -c Datum_rodenja.cpp -o Datum_rodenja.o $(CXXFLAGS)
+
+Prehrana.o: Prehrana.cpp
+	$(CPP) -c Prehrana.cpp -o Prehrana.o $(CXXFLAGS)
+
+Hranidbeni_lanac.o: Hranidbeni_lanac.cpp
+	$(CPP) -c Hranidbeni_lanac.cpp -o Hranidbeni_lanac.o $(CXXFLAGS)
