@@ -1,19 +1,18 @@
-# Hranidbeni lanac - project
-
+# Food Chain - Project
 ## Overview
-Ovo je projekt iz kolegija Objektno-orijentiranog programiranja u C++-u koji povlači podvrste datoteke Hranidbenog lanca u jednu zanimljivu cjelinu.
+This is a project for the Object-Oriented Programming (OOP) course in C++. It integrates various subtypes of food chain data into one cohesive and interesting unit.
 
-##  Features
-- Hijerarhijska klasa
-- Dinamičan prikaz
-
+## Features
+- Hierarchical Class Structure: Organized inheritance patterns to represent different levels of the food chain.
+- Dynamic Display: Real-time or flexible visualization of the relationships between entities.
 
 ## How to Open and Run
 ### Prerequisites
-Trebat će vam C++ compiler instaliran (kao što je **"GCC/MinGW"** ili **"Clang"**) ili IDE (**"Visual Studio"**, **"Code::Blocks"** ili **"VS Code"**)
+You will need a C++ compiler installed (such as GCC/MinGW or Clang) or an IDE (Visual Studio, Code::Blocks, or VS Code).
 
-### Opcija 1: Korištenje terminala
-1. **Klonirati terminal**
-   ```bash
-   git clone [https://github.com/mslavic23/C-_oop_project.git](https://github.com/mslavic23/C-oop_project.git)
-   cd C-oop_project
+### Option 1: Using the Terminal
+1. **Clone the Repository**
+
+Bash
+git clone https://github.com/mslavic23/C-_oop_project.git
+cd C-oop_project
